@@ -1,0 +1,17 @@
+services:
+  agentic-review:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - DATABASE_URL=sqlite:////app/data/agentic_review.db
+    volumes:
+      - agentic_review_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  agentic_review_data:
