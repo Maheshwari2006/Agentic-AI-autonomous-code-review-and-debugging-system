@@ -248,10 +248,6 @@ function CodeReviewApp() {
   );
 }
 
-// ------------------------------------------------------------------ //
-// Implementation feature: AI repository code fetching + implementation
-// suggestions (POST /api/implementation/analyze and friends).
-// ------------------------------------------------------------------ //
 
 function ChangeTypeBadge({ type }) {
   return <span className={`badge change-${type}`}>{type}</span>;

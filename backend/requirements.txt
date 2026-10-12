@@ -9,5 +9,3 @@ httpx>=0.27
 pytest>=8.2
 pytest-mock>=3.14
 
-# Optional: uncomment to use PostgreSQL instead of SQLite
-# psycopg[binary]>=3.2

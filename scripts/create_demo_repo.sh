@@ -1,19 +1,4 @@
-#!/usr/bin/env bash
-# Builds a tiny local Git repository with exactly the three commits
-# described in the project spec's "Final Acceptance Test":
-#   1. Initial implementation
-#   2. Introduce intentional bug
-#   3. Fix bug + unrelated change (two independent changes in one commit)
-#
-# Usage:
-#   ./scripts/create_demo_repo.sh [target_dir]
-#
-# The resulting repo is a normal local Git repo. To analyze it with this
-# project, either:
-#   a) push it to a real GitHub repo and point the dashboard at that, or
-#   b) use it directly with services/verification_runner.py-style local
-#      clone URLs (file:///path/to/demo_repo) for offline testing --
-#      see backend/tests/test_pipeline_e2e.py for exactly this pattern.
+
 set -euo pipefail
 
 TARGET_DIR="${1:-./data/demo_repo}"
